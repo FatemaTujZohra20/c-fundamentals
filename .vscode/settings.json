@@ -1,0 +1,18 @@
+{
+  "files.associations": { "*.c": "c", "*.h": "c" },
+  "C_Cpp.default.cStandard": "c11",
+
+  // Code Runner defaults to the Output pane, which cannot accept stdin.
+  // These programs use scanf, so force a real terminal.
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc -std=c11 -Wall -Wextra \"$fileName\" -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt"
+  },
+
+  "search.exclude": { "**/build": true },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [80]
+}

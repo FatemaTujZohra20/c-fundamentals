@@ -1,0 +1,27 @@
+# Build artifacts
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+
+# Code::Blocks
+*.cbp
+*.layout
+*.depend
+bin/
+obj/
+
+# Editor / OS
+# VS Code: share the project config, ignore personal/generated files
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
